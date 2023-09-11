@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "The approver extension",
-  "version": "1.0.10",
+  "version": "1.0.00",
   "description": "Cleans merge request titles for SSC use",
   "icons": {
     "48": "icons/approver_48.png",
