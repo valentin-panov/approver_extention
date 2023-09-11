@@ -1,0 +1,4 @@
+web-ext sign --api-key=[] --api-secret=[]
+
+https://addons.mozilla.org/en-US/developers/addon/api/key/
+

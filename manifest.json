@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "The approver extension",
+  "version": "1.0.10",
+  "description": "Cleans merge request titles for SSC use",
+  "icons": {
+    "48": "icons/approver_48.png",
+    "96": "icons/approver_96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://172.26.149.20:8080/ssc/*"
+      ],
+      "js": [
+        "app.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "approver_ext@luxoft.com"
+    }
+  }
+}
