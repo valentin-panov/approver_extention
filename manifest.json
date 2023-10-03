@@ -1,19 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "The approver extension",
-  "version": "1.0.00",
+  "name": "The FPR approve extension",
+  "version": "1.0.0",
   "description": "Cleans merge request titles for SSC use",
   "icons": {
-    "48": "icons/approver_48.png",
-    "96": "icons/approver_96.png"
+    "48": "icons/approve_48.png",
+    "96": "icons/approve_96.png"
   },
   "content_scripts": [
     {
       "matches": [
-        "http://172.26.149.20:8080/ssc/*"
+        "*://172.26.149.20/ssc/html/ssc/*"
       ],
       "js": [
-        "app.js"
+        "index.js"
       ]
     }
   ],
