@@ -21,11 +21,11 @@ function waitForTextArea() {
     if (el != null) {
       return resolve(el);
     }
-    const observer = new MutationObserver((mutations) => {
+    const observer = new MutationObserver(() => {
       const el = document.getElementById(selector);
       if (el != null) {
-        resolve(el);
         observer.disconnect();
+        resolve(el);
       }
     });
     observer.observe(document, {
@@ -35,4 +35,10 @@ function waitForTextArea() {
   });
 }
 
-waitForTextArea().then((res) => res.addEventListener("input", cleanInput));
+function handleTextArea(textArea) {
+  textArea.value =
+    "Approved. The number of code/files has changed due to the merge/new library:";
+  textArea.addEventListener("input", cleanInput);
+}
+
+waitForTextArea().then((res) => handleTextArea(res));

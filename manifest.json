@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "The FPR approve extension",
-  "version": "1.0.0",
+  "name": "AST FPR approve helper",
+  "version": "1.0.1",
   "description": "Cleans merge request titles for SSC use",
   "icons": {
     "48": "icons/approve_48.png",
