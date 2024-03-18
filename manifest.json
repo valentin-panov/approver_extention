@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "AST FPR approve helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cleans merge request titles for SSC use",
   "icons": {
     "48": "icons/approve_48.png",
@@ -11,6 +11,7 @@
     {
       "matches": [
         "*://172.26.149.20/ssc/html/ssc/*",
+        "*://172.26.136.7/ssc/html/ssc/*",
         "*://lc-lux-asteam-ssc.luxoft.com/ssc/html/ssc/*"
       ],
       "js": [
